@@ -12,7 +12,9 @@ def printArray(arr):
     print()
 
 if __name__ == '__main__':
-    arr = [7,5,4,2]
+    # arr = [7,5,4,2]
+    arr = list(map(int, input().split()))
+
     insertion_sort(arr)
     printArray(arr)
 

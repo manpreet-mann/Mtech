@@ -6,9 +6,11 @@ def liner_search(arr, x):
     return -1
 
 if __name__ == "__main__":
-    arr = [1,2,3,4,5,9]
-    x= 3
-    result= liner_search(arr, x)
+    # arr = [1,2,3,4,5,9]
+    arr = list(map(int, input().split()))
+    target = int(input("Enter target value "))
+    # x= 3
+    result= liner_search(arr, target)
     if(result == -1):
         print("Element not present")
     else:

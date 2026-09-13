@@ -17,7 +17,9 @@ def binary_search(arr, target):
     return -1
 
 if __name__ == "__main__":
-    arr = [1, 2, 3, 4, 6]
+    # arr = [1, 2, 3, 4, 6]
+    arr = list(map(int, input().split()))
+
     target = int(input("Enter target value "))
     # target = 4
     print(binary_search(arr, target))

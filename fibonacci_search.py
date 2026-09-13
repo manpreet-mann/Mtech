@@ -40,8 +40,9 @@ def fibonacci_search(arr, x):
     return -1
 
 
-arr = [10, 20, 30, 40, 50, 60, 70, 80]
-
-result = fibonacci_search(arr, 60)
+# arr = [10, 20, 30, 40, 50, 60, 70, 80]
+arr = list(map(int, input().split()))
+target = int(input("Enter target value "))
+result = fibonacci_search(arr, target)
 
 print("Element found at index:", result)
